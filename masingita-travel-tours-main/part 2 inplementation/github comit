@@ -1,0 +1,30 @@
+# Commit 1: Project Setup & Link Stylesheet
+git add .
+git commit -m "build: create master CSS stylesheet link across all HTML pages"
+
+# Commit 2: CSS Reset & Design Tokens
+git add css/style.css
+git commit -m "style: implement modern CSS reset, custom root variables, and color system"
+
+# Commit 3: Typography & Fluid Scaling
+git add css/style.css
+git commit -m "style: add responsive typography system with clamp scaling and heading hierarchy"
+
+# Commit 4: Layout & CSS Grid Implementation
+git add css/style.css
+git commit -m "layout: implement CSS Grid and Flexbox for responsive service and package cards"
+
+# Commit 5: Interactive Pseudo-classes & Form Controls
+git add css/style.css
+git commit -m "style: add interactive hover states, focus rings, and input styling using pseudo-classes"
+
+# Commit 6: Media Queries & Responsive Breakpoints
+git add css/style.css
+git commit -m "responsive: add media query breakpoints for tablet and mobile stacked layouts"
+
+# Commit 7: Documentation & Academic References
+git add README.md CHANGELOG.md
+git commit -m "docs: update README with architecture details, references, and changelog entries"
+
+# Push to Remote Repository
+git push origin main

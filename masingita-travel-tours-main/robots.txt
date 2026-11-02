@@ -1,0 +1,7 @@
+# robots.txt for Masingitas Travel and Tours
+# All public pages may be crawled. This file is public, so it never lists private content.
+User-agent: *
+Allow: /
+
+# TODO after publishing: replace the placeholder address below with the live GitHub Pages URL
+Sitemap: https://YOUR-GITHUB-USERNAME.github.io/masingita-travel-tours/sitemap.xml

@@ -1,0 +1,36 @@
+# Changelog
+
+## Version 3.0.0 – 2026-10-31 (Part 3: SEO, publishing preparation and JavaScript)
+### Added
+- `robots.txt` and `sitemap.xml` (7 public pages; placeholder domain to replace after publishing).
+- `js/script.js`: mobile menu toggle, back-to-top button, automatic footer year,
+  package filter and search, enquiry-form pre-fill/date rules/live summary/validation,
+  tour countdowns, and an "open now" office-hours indicator.
+- `images/` folder with descriptively named, compressed AVIF/WebP photos and an SVG favicon.
+- Unique `<title>` and meta description on every page; Open Graph tags; `lang="en-ZA"`.
+- JSON-LD `TravelAgency` structured data on the Home and Contact pages.
+- Skip link, visible focus styles, accessible form error messages, reduced-motion support.
+- Services page added to the navigation.
+
+### Changed
+- Moved the Part 2 stylesheet to `css/style.css` and linked it on every page (it was not linked before).
+- One `<h1>` per page with a logical h2/h3 hierarchy.
+- Rewrote alt text to describe each image accurately; rewrote vague link text.
+- Lazy-loaded below-the-fold images; added width/height to every image; hero images load with high priority.
+- Replaced the leftover "Divine Dining" restaurant Events page with a Group Tours page.
+- Consistent header and footer (business name, phone, email, hours) on every page.
+- Removed CSS rules that broke layouts (`section:has(article)` grid, bold first list item).
+
+### Fixed
+- Broken footer links to `index.html` on the Contact and Enquiry pages.
+- Wrong stylesheet path on the Services page.
+- Cape Town package showing an unrelated hairdresser photo.
+- WhatsApp links now open safely with `rel="noopener noreferrer"`.
+
+## Version 2.0.0 – 2026-09-18 (Part 2: CSS)
+- Created the master stylesheet with CSS custom properties, reset, grid/flexbox layouts,
+  pseudo-classes and responsive breakpoints (1024px, 768px, 480px).
+
+## Version 1.0.0 – 2026-08-11 (Part 1: HTML)
+- Created the HTML5 pages with semantic elements, consistent navigation and an enquiry form.
+- Added README documentation and this changelog.

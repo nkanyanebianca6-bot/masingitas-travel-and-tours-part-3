@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa Holiday Packages &amp; Prices | Masingitas Travel and Tours</title>
+    <meta name="description" content="Compare South African holiday packages with prices: Kruger safari from R4,500, Cape Town city break, Durban beach retreat, Drakensberg hiking, school tours and car hire.">
+    <meta name="theme-color" content="#1b365d">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Holiday Packages | Masingitas Travel and Tours">
+    <meta property="og:description" content="Safari, beach, city, mountain, group and transport packages with starting prices.">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>document.documentElement.className = "js";</script>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="../index.html">Masingitas Travel and Tours<span>Explore South Africa &amp; beyond</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="menu.html" aria-current="page">Packages</a></li>
+                    <li><a href="events.html">Group Tours</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>South Africa Holiday Packages and Prices</h1>
+                <p class="lead">
+                    Handpicked safari, beach, city and mountain packages, plus corporate, school and
+                    transport options. Every package can be extended with flights, extra nights or
+                    car hire.
+                </p>
+            </div>
+            <figure>
+                <img src="../images/travel-map-camera-and-backpack.avif"
+                     alt="Travel map, camera, notebook and backpack laid out for trip planning"
+                     width="1000" height="790" fetchpriority="high" decoding="async">
+            </figure>
+        </section>
+
+        <section aria-labelledby="packages-heading">
+            <h2 id="packages-heading">Featured Travel Packages</h2>
+            <p>Filter by type of trip or search for a destination. Prices are per person and are a starting guide only.</p>
+
+            <!-- Filter controls (powered by js/script.js) -->
+            <div class="filter-bar" role="group" aria-label="Filter packages by type">
+                <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-filter="leisure" aria-pressed="false">Beach &amp; City</button>
+                <button type="button" class="filter-btn" data-filter="adventure" aria-pressed="false">Safari &amp; Adventure</button>
+                <button type="button" class="filter-btn" data-filter="groups" aria-pressed="false">Corporate &amp; Groups</button>
+                <button type="button" class="filter-btn" data-filter="transport" aria-pressed="false">Transport</button>
+            </div>
+            <div class="filter-bar">
+                <label class="visually-hidden" for="package-search">Search packages</label>
+                <input type="search" id="package-search" placeholder="Search e.g. Kruger, beach, hiking">
+            </div>
+            <p id="result-count" class="result-count" aria-live="polite"></p>
+
+            <div class="grid" id="package-list">
+
+                <article class="card" data-category="adventure">
+                    <img src="../images/safari-game-drive-vehicle.avif"
+                         alt="Open safari game-drive vehicle in tall grass at sunset"
+                         width="800" height="535" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">Safari</span>
+                        <h3>Kruger Wildlife Safari</h3>
+                        <p>Three days of guided game drives, a bush lodge stay and all meals.</p>
+                        <p><span class="price">From R4,500 per person</span><br>
+                           Includes 4x4 game drives, park conservation fees, lodging and meals.</p>
+                        <a class="card-link" href="enquiry.html?service=safari&amp;package=Kruger+Wildlife+Safari+package">Enquire about the Kruger safari</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="leisure">
+                    <img src="../images/cape-town-table-mountain-aerial.webp"
+                         alt="Aerial view of Cape Town, the stadium and the coastline below Table Mountain"
+                         width="800" height="533" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">City break</span>
+                        <h3>Cape Town Coastal and City Experience</h3>
+                        <p>A four-day city break with the Table Mountain cableway, a Cape Peninsula tour and a V&amp;A Waterfront stay.</p>
+                        <p><span class="price">From R3,800 per person</span><br>
+                           Includes hotel stay, city sightseeing pass and cableway ticket.</p>
+                        <a class="card-link" href="enquiry.html?service=holiday-package&amp;package=Cape+Town+Coastal+and+City+Experience">Enquire about the Cape Town package</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="leisure">
+                    <img src="../images/beach-and-ocean-at-sunrise.avif"
+                         alt="Golden beach and turquoise waves at sunrise"
+                         width="800" height="532" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">Beach</span>
+                        <h3>Durban Beach and Coastal Retreat</h3>
+                        <p>Unwind on Durban's Golden Mile with a beachfront hotel and marine world tickets.</p>
+                        <p><span class="price">From R2,900 per person</span><br>
+                           Includes resort accommodation, breakfast and shuttle transfers.</p>
+                        <a class="card-link" href="enquiry.html?service=holiday-package&amp;package=Durban+Beach+and+Coastal+Retreat">Enquire about the Durban beach retreat</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="adventure">
+                    <img src="../images/mountain-range-and-forest-valley.avif"
+                         alt="Mountain peaks rising above a forested valley"
+                         width="800" height="533" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">Hiking</span>
+                        <h3>Drakensberg Mountain Excursion</h3>
+                        <p>Scenic mountain hikes, cosy lodge accommodation and nature trails.</p>
+                        <p><span class="price">From R3,200 per person</span><br>
+                           Includes lodge stay, guided hiking trails, dinner and breakfast.</p>
+                        <a class="card-link" href="enquiry.html?service=holiday-package&amp;package=Drakensberg+Mountain+Excursion">Enquire about the Drakensberg excursion</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="groups">
+                    <img src="../images/airplane-wing-above-clouds-small.avif"
+                         alt="Aeroplane wing above white clouds and a blue sky"
+                         width="800" height="531" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">Business</span>
+                        <h3>Corporate and Executive Travel</h3>
+                        <p>Business travel solutions, priority flight bookings and VIP airport shuttles.</p>
+                        <p><span class="price">Custom corporate quotes</span><br>
+                           Includes flight ticketing, conference venue hire and private transfers.</p>
+                        <a class="card-link" href="enquiry.html?service=corporate">Request a corporate travel quote</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="groups">
+                    <img src="../images/group-of-friends-hiking.avif"
+                         alt="Group of young travellers celebrating outdoors in the mountains"
+                         width="800" height="533" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">School &amp; youth</span>
+                        <h3>School and Youth Group Excursions</h3>
+                        <p>Safe, structured educational tours to historical and cultural sites across South Africa.</p>
+                        <p><span class="price">Group discount rates available</span><br>
+                           Includes coach transport, student accommodation and entry fees.</p>
+                        <a class="card-link" href="enquiry.html?service=group-tour&amp;package=School+and+Youth+Group+Excursion">Request a school group quote</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="transport">
+                    <img src="../images/coach-bus-at-dusk.avif"
+                         alt="Passenger coach with headlights on at dusk"
+                         width="800" height="534" loading="lazy" decoding="async">
+                    <div class="card-content">
+                        <span class="tag">Transport</span>
+                        <h3>Car Rentals and Airport Shuttles</h3>
+                        <p>Point-to-point shuttle transfers and car hire at major airports and cities.</p>
+                        <p><span class="price">From R450 per day</span><br>
+                           Chauffeur or self-drive, unlimited mileage options and roadside support.</p>
+                        <a class="card-link" href="enquiry.html?service=shuttle-car">Book car hire or a shuttle</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <aside>
+            <h2>Looking for a Custom Package?</h2>
+            <p>
+                Don't see your destination? We build personalised itineraries for couples,
+                families and organisations.
+                <a href="enquiry.html?service=holiday-package">Request a custom itinerary quote</a>.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <h2>Masingitas Travel and Tours</h2>
+                <p>South African travel agency planning holidays, safaris, group tours and corporate travel since 2008.</p>
+            </div>
+            <div>
+                <h2>Contact Details</h2>
+                <address>
+                    Based in South Africa<br>
+                    Phone: <a href="tel:+27111234567">+27 (0) 11 123 4567</a><br>
+                    Email: <a href="mailto:info@masingitastravel.co.za">info@masingitastravel.co.za</a><br>
+                    Mon–Fri 08:00–17:00, Sat 09:00–13:00 (SAST)
+                </address>
+            </div>
+            <div>
+                <h2>Plan Your Trip</h2>
+                <ul>
+                    <li><a href="service.html">All travel services</a></li>
+                    <li><a href="events.html">Upcoming group tours</a></li>
+                    <li><a href="enquiry.html">Request a travel quote</a></li>
+                    <li><a href="contact.html">Contact our consultants</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span id="year">2026</span> Masingitas Travel and Tours. Academic website project. Photographs from Unsplash.</p>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top of page">&uarr;</button>
+</body>
+</html>

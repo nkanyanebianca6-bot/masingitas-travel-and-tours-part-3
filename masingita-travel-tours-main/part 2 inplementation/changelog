@@ -1,0 +1,24 @@
+# Development Changelog
+
+## [Version 2.0.0] - 2026-09-18 (Part 2 Implementation)
+### Added
+- Created external master stylesheet `css/style.css`.
+- Implemented CSS Custom Properties (`:root`) for centralized color palettes, fonts, shadows, and spacing.
+- Added comprehensive CSS Reset (`*, *::before, *::after`) to standardize rendering across Chrome, Safari, Firefox, and Edge.
+- Built responsive CSS Grid (`auto-fit`, `minmax()`) layout for service cards, safari packages, and travel articles.
+- Added interactive states using pseudo-classes (`:hover`, `:focus`, `:active`, `:nth-child()`, `::selection`, `::placeholder`).
+- Implemented multi-tier media queries for Tablet (`1024px`), Mobile (`768px`), and Small Screen Mobile (`480px`).
+- Formatted form inputs with focus rings, hover responses, and accessible fieldset legends.
+
+### Changed
+- Linked `css/style.css` across all 7 website HTML files (`index.html`, `aboutus.html`, `contact.html`, `enquiry.html`, `events.html`, `menu.html`, `service.html`).
+- Replaced legacy `<hr>` structural breaks with clean CSS margin/border spacing.
+- Enhanced navigation links into modern responsive button-style menu items.
+
+---
+
+## [Version 1.0.0] - 2026-08-11 (Part 1 Initial Submission)
+### Added
+- Created core HTML5 web pages (`index.html`, `aboutus.html`, `contact.html`, `enquiry.html`, `events.html`, `menu.html`, `service.html`).
+- Implemented semantic tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<figure>`, `<figcaption>`, `<footer>`).
+- Added structured booking enquiry form with validation attributes (`required`, `type="email"`, `type="tel"`).

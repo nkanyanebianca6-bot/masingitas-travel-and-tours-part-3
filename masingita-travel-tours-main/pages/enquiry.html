@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Travel Quote | Masingitas Travel and Tours</title>
+    <meta name="description" content="Send your travel dates, group size and destination to Masingitas Travel and Tours and receive a personalised quote and itinerary within 24 business hours.">
+    <meta name="theme-color" content="#1b365d">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Request a Travel Quote | Masingitas Travel and Tours">
+    <meta property="og:description" content="Tell us about your trip and receive a personalised quotation.">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <script>document.documentElement.className = "js";</script>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="../index.html">Masingitas Travel and Tours<span>Explore South Africa &amp; beyond</span></a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+            <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="menu.html">Packages</a></li>
+                    <li><a href="events.html">Group Tours</a></li>
+                    <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Request a Personalised Travel Quote</h1>
+                <p class="lead">
+                    Tell us where you would like to go, when, and who is travelling. A consultant
+                    will reply within 24 business hours with a quote and proposed itinerary.
+                </p>
+            </div>
+            <figure>
+                <img src="../images/airplane-wing-above-clouds.avif"
+                     alt="Aeroplane wing above clouds in a golden sky"
+                     width="1200" height="797" fetchpriority="high" decoding="async">
+            </figure>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading">Travel Enquiry Form</h2>
+            <p>Fields marked with * are required.</p>
+
+            <!-- Front-end demonstration: script.js validates the form and shows a
+                 confirmation, but nothing is sent or stored. A real deployment needs a
+                 trusted form service or server-side code. -->
+            <form id="enquiry-form" novalidate>
+                <fieldset>
+                    <legend>1. Your contact details</legend>
+                    <div class="field">
+                        <label for="fullname">Full name *</label>
+                        <input type="text" id="fullname" name="fullname" autocomplete="name"
+                               placeholder="e.g. Thabo Mokoena" required aria-describedby="fullname-error">
+                        <p class="error-message" id="fullname-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address *</label>
+                        <input type="email" id="email" name="email" autocomplete="email"
+                               placeholder="e.g. thabo@example.com" required aria-describedby="email-error">
+                        <p class="error-message" id="email-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone or WhatsApp number *</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel"
+                               placeholder="e.g. +27 82 123 4567" required aria-describedby="phone-error">
+                        <p class="error-message" id="phone-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="clienttype">Type of traveller</label>
+                        <select id="clienttype" name="clienttype">
+                            <option value="leisure">Individual / leisure traveller</option>
+                            <option value="family">Family group</option>
+                            <option value="corporate">Corporate / business delegation</option>
+                            <option value="school">School / academic excursion</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Your trip</legend>
+                    <div class="field">
+                        <label for="service">Service required *</label>
+                        <select id="service" name="service" required aria-describedby="service-error">
+                            <option value="">Choose a service</option>
+                            <option value="holiday-package">Full holiday package</option>
+                            <option value="safari">Bush safari and tour</option>
+                            <option value="group-tour">Group tour</option>
+                            <option value="tours">Guided tours and sightseeing</option>
+                            <option value="accommodation">Accommodation only</option>
+                            <option value="flights">Flight bookings</option>
+                            <option value="shuttle-car">Car rental and airport shuttle</option>
+                            <option value="corporate">Corporate travel</option>
+                        </select>
+                        <p class="error-message" id="service-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="travellers">Number of travellers</label>
+                        <input type="number" id="travellers" name="travellers" min="1" max="100" value="1"
+                               inputmode="numeric" aria-describedby="travellers-error">
+                        <p class="error-message" id="travellers-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="departure-date">Departure date</label>
+                        <input type="date" id="departure-date" name="departure-date" aria-describedby="departure-date-error">
+                        <p class="error-message" id="departure-date-error" aria-live="polite"></p>
+                    </div>
+                    <div class="field">
+                        <label for="return-date">Return date</label>
+                        <input type="date" id="return-date" name="return-date" aria-describedby="return-date-error">
+                        <p class="error-message" id="return-date-error" aria-live="polite"></p>
+                    </div>
+                    <p id="trip-summary" class="trip-summary field-full" aria-live="polite"></p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Anything else?</legend>
+                    <div class="field field-full">
+                        <label for="details">Destination preferences and special requests</label>
+                        <textarea id="details" name="details" rows="5"
+                                  placeholder="Preferred destinations, hotel style, dietary needs or budget..."></textarea>
+                        <p class="hint">Please do not include ID numbers, passport details or card information.</p>
+                    </div>
+                </fieldset>
+
+                <p id="form-status" class="form-status" role="status" tabindex="-1" hidden></p>
+
+                <div class="form-actions">
+                    <button type="submit">Send travel enquiry</button>
+                    <button type="reset">Clear form</button>
+                </div>
+            </form>
+        </section>
+
+        <aside>
+            <h2>Not Sure Which Service to Choose?</h2>
+            <p>
+                Our consultants can help you match a package to your destination, dates, group size
+                and budget. <a href="contact.html">Contact our travel support team</a> or
+                <a href="menu.html">compare our holiday packages</a> first.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <h2>Masingitas Travel and Tours</h2>
+                <p>South African travel agency planning holidays, safaris, group tours and corporate travel since 2008.</p>
+            </div>
+            <div>
+                <h2>Contact Details</h2>
+                <address>
+                    Based in South Africa<br>
+                    Phone: <a href="tel:+27111234567">+27 (0) 11 123 4567</a><br>
+                    Email: <a href="mailto:info@masingitastravel.co.za">info@masingitastravel.co.za</a><br>
+                    Mon–Fri 08:00–17:00, Sat 09:00–13:00 (SAST)
+                </address>
+            </div>
+            <div>
+                <h2>Plan Your Trip</h2>
+                <ul>
+                    <li><a href="menu.html">Browse holiday packages</a></li>
+                    <li><a href="events.html">Upcoming group tours</a></li>
+                    <li><a href="service.html">All travel services</a></li>
+                    <li><a href="contact.html">Contact our consultants</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; <span id="year">2026</span> Masingitas Travel and Tours. Academic website project. Photographs from Unsplash.</p>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top of page">&uarr;</button>
+</body>
+</html>
